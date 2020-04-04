@@ -1,0 +1,28 @@
+@import "../../common/base";
+@import "../../common/mixin";
+@import "../../common/placeholder";
+@import "../../common/variable";
+
+.delivery{
+    @include display($dis:flex, $fdir:column, $just:center);
+    @include image($url:"../image/etc/main_delivery.jpg",$size:cover, $pos:center center, $rep:no-repeat);
+    height: 100vh;
+    text-align: left;
+    color: $white;
+    padding-left: 14%;
+
+    h2{
+        @include h2;
+    }
+    strong{
+        @include strong;
+    }
+    .delivery__detail__btn{
+        width: 240px;
+        height: 50px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        background-color: $lightGreen;
+        color: $green;
+    }
+}
