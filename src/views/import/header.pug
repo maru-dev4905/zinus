@@ -4,7 +4,7 @@ include ../common/variable
 header.header
             .container
                 ul.container__product
-                    +linkList("#","matteress")
+                    +linkList("#","mattress")
                     +linkList("#","bed frame")
                     +linkList("#","pillow")
                     +linkList("#","pet")
@@ -15,11 +15,11 @@ header.header
                     +linkList("#","login")
                     li
                         a(href="#")
-                            span
+                            span.container__introduce__cart
                                 em 0
                                 +img("./image/header/ico_cart.png","카트 이미지")
             .head(class="head__layout")
-                button.head_bugger(type="button")
+                button.head__bugger(type="button")
                 h1
                     button.head__logo
                 form

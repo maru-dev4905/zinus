@@ -1,0 +1,98 @@
+@import "./layout";
+@import "../common/mixin";
+@import "../common/base";
+@import "../common/placeholder";
+@import "../common/variable";
+
+.header {
+    text-transform: uppercase;
+    box-shadow: 0 5px 10px $shadow-1;
+}
+.container {
+    @include display($dis:flex,$fdir:row,$just:space-between);
+    font-weight: bold;
+    padding: 10px 20px;
+    border-bottom: 1px solid $shadow-1;
+
+    .container__product {
+        @include display($dis:flex, $fdir:row);
+
+        li {
+            margin-left: 15px;
+
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+
+    .container__introduce {
+        @include display($dis:flex, $fdir:row);
+
+        li {
+            margin-right: 15px;
+
+            &last-child {
+                margin: 0;
+            }
+
+            &:nth-child(3)::after {
+                content: "|";
+                margin-left: 14.8px;
+                color: $green;
+            }
+        }
+
+        .container__introduce__cart {
+            img {
+                @include position($pos:relative, $t:50%);
+                transform: translateY(-50%);
+            }
+            em {
+                @include position($pos:absolute, $t:2px, $r:20px);
+                @include display($dis:flex, $just:center, $ali:center);
+                background-color: $black;
+                color: $white;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.head {
+    padding: 0 20px;
+
+    .head__bugger {
+        @include image($url:"../image/header/top_menu.png", $size:70%, $pos:0 center, $rep:no-repeat);
+        width: 30px;
+        height: 30px;
+    }
+
+    h1 {
+        @include display($dis:flex,$just:center, $ali:center);
+
+        .head__logo {
+            @include image($url:"../image/banner/logo.png",$size:100%, $pos:center center, $rep:no-repeat);
+            width: 100px;
+            height: 60px;
+        }
+    }
+    form {
+        @include display($dis:flex, $just:flex-end, $ali:center);
+
+        input {
+            height: 50%;
+            margin-right: 10px;
+            border:none;
+            border-bottom: 1px solid $shadow-1;
+        }
+
+        .head__search {
+            @include image($url:"../image/header/ico_srch.png",$size:100%, $pos:center center, $rep:no-repeat);
+            width: 20px;
+            height: 60px;
+        }
+    }
+}

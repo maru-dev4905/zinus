@@ -1,0 +1,15 @@
+@import "./common/mixin";
+@import "./common/base";
+@import "./common/placeholder";
+@import "./common/variable";
+
+.header__layout{
+    display: grid;
+    grid-auto-rows: minmax(50px, auto);   
+}
+.head__layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-auto-flow: column;
+    align-items: center;
+}

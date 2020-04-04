@@ -1,0 +1,22 @@
+@mixin display($dis:null, $fdir:null, $just:null, $ali:null) {
+    display: $dis;
+    flex-direction: $fdir;
+    justify-content: $just;
+    align-items: $ali;
+}
+
+@mixin position($pos:null, $t:null, $r:null, $b:null, $l:null, $z:null) {
+    position: $pos;
+    top: $t;
+    right: $r;
+    bottom: $b;
+    left: $b;
+    z-index: $z;
+}
+
+@mixin image($url, $size:null, $pos:null, $rep:null) {
+    background-image: url( $url );
+    background-size: $size;
+    background-position: $pos;
+    background-repeat: $rep;
+}
