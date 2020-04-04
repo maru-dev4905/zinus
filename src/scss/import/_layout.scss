@@ -15,3 +15,6 @@
 .amazon__layout{
     @include display($dis:grid,$tCol:40% 40%, $tRow:40% 40%, $just:center, $aliC:center, $gap:20px);
 }
+.testi__layout{
+    @include display($dis:grid,$tCol:repeat(auto-fit,380px),$just:center, $atFlow:column, $ali:center, $gap:30px);
+}

@@ -1,0 +1,40 @@
+@import "../../common/base";
+@import "../../common/mixin";
+@import "../../common/placeholder";
+@import "../../common/variable";
+
+.testi{
+    @include image($url:"../image/etc/bg_dots.png");
+    height: 400px;
+    color: $green;
+    background-color: $lightGreen;
+
+    .testi__box{
+        @include display($dis:flex, $fdir:column);
+
+        h3,p{
+            margin-bottom: 20px;
+        }
+        h3{
+            font-size: 24px;
+            font-weight: 700;
+        }
+        p{
+            font-size: 18px;
+        }
+        button{
+            width: 100px;
+            font-size: 16.5px;
+            font-weight: bold;
+            text-align: left;
+            &::after{
+                @include image($url:"../image/etc/bg_btn_more.png",$size:cover, $pos:center center, $rep:no-repeat);
+                content: "";
+                display: inline-block;
+                margin-left: 10px;
+                width: 20px;
+                height: 10px;
+            }
+        }
+    }
+}
