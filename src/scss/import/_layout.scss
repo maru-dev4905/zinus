@@ -12,3 +12,6 @@
 .banner__layout{
     @include display($dis:grid,$tRow:55% 45%);
 }
+.amazon__layout{
+    @include display($dis:grid,$tCol:40% 40%, $tRow:40% 40%, $just:center, $aliC:center, $gap:20px);
+}

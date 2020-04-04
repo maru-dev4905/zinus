@@ -1,13 +1,15 @@
-@mixin display($dis:null, $fdir:null, $just:null, $ali:null, $atRow:null, $atCol:null, $atFlow:null, $tRow:null, $tCol:null) {
+@mixin display($dis:null, $fdir:null, $just:null, $ali:null, $atRow:null, $atCol:null, $atFlow:null, $tRow:null, $tCol:null, $aliC:null, $gap:null) {
     display: $dis;
     flex-direction: $fdir;
     justify-content: $just;
+    align-content: $aliC;
     align-items: $ali;
     grid-auto-rows: $atRow;
     grid-auto-columns: $atCol;
     grid-auto-flow: $atFlow;
     grid-template-rows: $tRow;
     grid-template-columns: $tCol;
+    grid-gap: $gap;
 }
 
 @mixin position($pos:null, $t:null, $r:null, $b:null, $l:null, $z:null) {
