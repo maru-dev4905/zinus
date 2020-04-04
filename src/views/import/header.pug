@@ -1,0 +1,27 @@
+include ../common/mixin
+include ../common/variable
+
+header.header
+            .container
+                ul.container__product
+                    +linkList("#","matteress")
+                    +linkList("#","bed frame")
+                    +linkList("#","pillow")
+                    +linkList("#","pet")
+                ul.container__introduce
+                    +linkList("#","zinus")
+                    +linkList("#","mattress quiz")
+                    +linkList("#","connect")
+                    +linkList("#","login")
+                    li
+                        a(href="#")
+                            span
+                                em 0
+                                +img("./image/header/ico_cart.png","카트 이미지")
+            .head(class="head__layout")
+                button.head_bugger(type="button")
+                h1
+                    button.head__logo
+                form
+                    input(type="text")
+                    button.head__search(type="button")
