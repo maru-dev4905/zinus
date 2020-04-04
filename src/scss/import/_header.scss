@@ -5,14 +5,17 @@
 @import "../common/variable";
 
 .header {
+    @include position($pos:fixed, $z:100,$t:0, $l:0);
     text-transform: uppercase;
     box-shadow: 0 5px 10px $shadow-1;
+    width: 100vw;
 }
 .container {
     @include display($dis:flex,$fdir:row,$just:space-between);
     font-weight: bold;
     padding: 10px 20px;
     border-bottom: 1px solid $shadow-1;
+    background-color: $white;
 
     .container__product {
         @include display($dis:flex, $fdir:row);
@@ -63,6 +66,7 @@
 
 .head {
     padding: 0 20px;
+    background-color: $white;
 
     .head__bugger {
         @include image($url:"../image/header/top_menu.png", $size:70%, $pos:0 center, $rep:no-repeat);
