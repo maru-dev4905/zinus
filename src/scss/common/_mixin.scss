@@ -15,13 +15,14 @@
     top: $t;
     right: $r;
     bottom: $b;
-    left: $b;
+    left: $l;
     z-index: $z;
 }
 
-@mixin image($url, $size:null, $pos:null, $rep:null) {
+@mixin image($url, $size:null, $pos:null, $rep:null,$ath:null) {
     background-image: url( $url );
     background-size: $size;
     background-position: $pos;
     background-repeat: $rep;
+    background-attachment: $ath;
 }

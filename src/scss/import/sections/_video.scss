@@ -1,0 +1,42 @@
+@import "../../common/base";
+@import "../../common/mixin";
+@import "../../common/placeholder";
+@import "../../common/variable";
+
+.video{
+    @include display($dis:flex, $fdir:column, $just:center, $ali:center);
+    @include image($url:"../image/etc/main_movie.jpg",$size:cover, $pos:center center, $rep:no-repeat, $ath:fixed);
+    height: 100vh;
+    text-align: center;
+    color: $white;
+
+    h2{
+        font-size: 3.5rem;
+        padding-bottom: 20px;
+    }
+    strong{
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+    .video--btn--open{
+        @include image($url:"../image/etc/btn_play.png",$size:85%, $pos:center center, $rep:no-repeat);
+        width: 53px;
+        height: 53px;
+        margin-top: 35px;
+    }
+    .video--box{
+        @include position($pos:absolute, $z:10);
+        visibility: hidden;
+        width: 58.2%;
+        height: 70%;
+        
+        .video--btn--close{
+            @include image($url:"../image/etc/bg_choice.png", $size:cover, $pos:center center, $rep:no-repeat);
+            @include position($pos:relative, $l:49%);
+            width: 25px;
+            height: 25px;
+            left: 49%;
+            margin-bottom: 10px;
+        }
+    }
+}
