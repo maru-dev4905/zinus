@@ -3,7 +3,36 @@
 @import "../../common/placeholder";
 @import "../../common/variable";
 
-.banner{
+.banner {
     @include image($url:"../image/etc/main_top.jpg",$size:cover, $pos:center center, $rep:no-repeat);
+
     height: 100vh;
+    color: $green;
+
+    .banner__text {
+        align-self: end;
+        justify-self: center;
+        text-align: center;
+
+        h2 {
+            font-size: 3.5rem;
+            padding-bottom: 20px;
+        }
+
+        strong {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+    }
+    .banner__scroll{
+        align-self: end;
+        justify-self: center;
+
+        .banner__scroll__img{
+            @include image($url:"../image/etc/ico_main_scroll.png",$pos:center center, $size:cover, $rep:no-repeat);
+            width: 60px;
+            height: 32px;
+            margin-bottom: 50px;
+        }
+    }
 }

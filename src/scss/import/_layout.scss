@@ -4,12 +4,11 @@
 @import "./common/variable";
 
 .header__layout{
-    display: grid;
-    grid-auto-rows: minmax(auto, auto);   
+    @include display($dis:grid,$atRow:minmax(auto auto));
 }
 .head__layout{
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-auto-flow: column;
-    align-items: center;
+    @include display($dis:grid,$tCol:2fr 1fr 2fr, $atFlow:column, $ali:center);
+}
+.banner__layout{
+    @include display($dis:grid,$tRow:55% 45%);
 }

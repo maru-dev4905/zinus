@@ -1,8 +1,13 @@
-@mixin display($dis:null, $fdir:null, $just:null, $ali:null) {
+@mixin display($dis:null, $fdir:null, $just:null, $ali:null, $atRow:null, $atCol:null, $atFlow:null, $tRow:null, $tCol:null) {
     display: $dis;
     flex-direction: $fdir;
     justify-content: $just;
     align-items: $ali;
+    grid-auto-rows: $atRow;
+    grid-auto-columns: $atCol;
+    grid-auto-flow: $atFlow;
+    grid-template-rows: $tRow;
+    grid-template-columns: $tCol;
 }
 
 @mixin position($pos:null, $t:null, $r:null, $b:null, $l:null, $z:null) {
