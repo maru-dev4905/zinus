@@ -1,0 +1,69 @@
+@import "../../common/base";
+@import "../../common/mixin";
+@import "../../common/placeholder";
+@import "../../common/variable";
+
+.certi {
+    @include display($dis:flex, $just:center, $ali:center);
+    @include image($url:"../image/etc/bg_stripe.png");
+    color: $green;
+    height: 130vh;
+
+    .certi__content {
+        width: 1180px;
+        height: auto;
+        background-color: #fff;
+
+        .certi__content__text {
+            margin: 30px 50px 100px;
+            grid-column: 1/3;
+            text-align: center;
+            h2 {
+                @include h2;
+            }
+            strong {
+                @include strong;
+            }
+            p {
+                margin-top: 25px;
+                font-size: 18px;
+                font-weight: lighter;
+            }
+            span {
+                font-weight: 500;
+            }
+        }
+        img {
+            justify-self: end;
+            margin-right: 50px;
+        }
+        .certi__content__list {
+            margin-right: 50px;
+            li {
+                font-size: 14px;
+                line-height: 1.6;
+                margin-bottom: 20px;
+                font-weight: 600;
+
+                &::before {
+                    @include image($url:"../image/etc/ico_checklist.png",$size:100%,$pos:center center, $rep:no-repeat);
+                    content: "";
+                    display: inline-block;
+                    margin-right: 5px;
+                    width: 18px;
+                    height: 18px;
+                }
+            }
+            button {
+                color: $white;
+                margin: 20px 0;
+                font-size: 1.1rem;
+                font-weight: 600;
+                width: 250px;
+                height: 50px;
+                background-color: $green;
+            }
+        }
+
+    }
+}

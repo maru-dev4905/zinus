@@ -1,8 +1,10 @@
-include variable
-
 mixin linkList(link, text)
     li
         a(href=link)=text
+
+mixin list(texts)
+    each text in texts
+        li= text
 
 mixin img(url, alt)
     img(src=url, alt=alt)
