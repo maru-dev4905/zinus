@@ -1,0 +1,48 @@
+@import "../../common/base";
+@import "../../common/mixin";
+@import "../../common/placeholder";
+@import "../../common/variable";
+
+.wonder{
+    @include image($url:"../image/etc/main_wonder.jpg",$ath:fixed,$size:cover,$pos:center center, $rep:no-repeat);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    color: $white;
+
+    h2{
+        @include h2;
+        justify-self: center;
+        align-self: end;
+    }
+    .wonder__content{
+        padding: 0 50px;
+        height: 75%;
+        
+        img{
+            @include position($pos:relative, $l:50%);
+            transform: translateX(-50%);
+            width: 100px;
+        }
+        strong{
+            font-size: 20px;
+            font-weight: 300;
+            width: 50%;
+            color: $yellow;
+        }
+        p{
+            font-size: 15px;
+            font-weight: 300;
+            width: 50%;
+            margin-top: 30px;
+        }
+        .wonder__box__text{
+            @include display($dis:flex,$just:space-between,$ali:center,$fdir:column);
+            height: 60%;
+            margin-top: 30px;
+            line-height: 1.5;
+            text-align: center;
+            word-break: keep-all;
+        }
+    }
+}

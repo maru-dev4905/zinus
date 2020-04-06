@@ -8,3 +8,10 @@ mixin list(texts)
 
 mixin img(url, alt)
     img(src=url, alt=alt)
+
+mixin wonderBox(url,stronger, texts)
+    .wonder__box
+        img(src=url, alt="wonder-img")
+        .wonder__box__text
+            strong= stronger
+            p= texts

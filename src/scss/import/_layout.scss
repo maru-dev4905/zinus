@@ -21,3 +21,9 @@
 .certi__layout{
     @include display($dis:grid,$tCol:40% 60%, $tRow:50% 50%, $gap:20px);
 }
+.wonder__layout{
+    @include display($dis:grid,$tRow:30% 70%);
+}
+.wonder__content__layout{
+    @include display($dis:grid,$tCol:repeat(3,1fr),$gap:3%, $just:center, $ali:center);
+}
