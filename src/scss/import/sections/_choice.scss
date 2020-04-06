@@ -1,0 +1,40 @@
+@import "../../common/base";
+@import "../../common/mixin";
+@import "../../common/placeholder";
+@import "../../common/variable";
+
+.choice{
+    @include image($url:"../image/etc/bg_choice_pattern.png",$pos:left top, $rep:repeat-x);
+    @include display($dis:flex,$just:center,$ali:center,$fdir:column);
+    background-color: $lightGreen;
+    color: $green;
+    width: 100vw;
+    height: 100vh;
+    h2{
+        @include h2;
+    }
+    strong{
+        @include strong;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    p{
+        @include position($pos:relative,$b:70px);
+        font-weight: 700;
+        font-size: 18px;
+        text-transform: uppercase;
+        text-align: center;
+
+    }
+    a{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+    }
+    li{
+        background-color: $white;
+        width: 200px;
+        height:200px;
+        border-radius: 50%;
+    }
+}

@@ -15,3 +15,15 @@ mixin wonderBox(url,stronger, texts)
         .wonder__box__text
             strong= stronger
             p= texts
+
+mixin choiceList(link,url,text)
+    li
+        a(href=link)
+            img(src=url, alt="pick-img")
+            p= text
+
+mixin sectionTitle(title, subText, subCheck)
+    h2= title
+    if subCheck
+        strong= subText
+    

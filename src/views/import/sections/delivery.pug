@@ -1,10 +1,6 @@
+include ../../common/mixin.pug
+include ../../common/variable.pug
+
 sections.delivery
-    h2 Mattress in a Box
-    strong 띵동! '가장 편안한 잠'이 배달되었습니다.
-        br 
-        |이제 방문 약속을 기다릴 필요가 없습니다.
-        br
-        |상자만 열면 멋진 매트리스가 눈 앞에 펼쳐집니다.
-        br
-        |언제 어디서든 편리하게 주문하세요.
+    +sectionTitle(deliveryTitle,deliveryText,true)
     button.delivery__detail__btn(type="button") 자세히 보러가기

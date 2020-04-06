@@ -1,10 +1,8 @@
+include ../../common/mixin.pug
+include ../../common/variable.pug
+
 section.video
-    h2 Tales from the box
-    strong 그녀에게 배달된 상자 하나.
-        br 
-        | 상자를 여는 순간,
-        br 
-        | 특별하고 놀라운 이야기가 시작됩니다.
+    +sectionTitle(videoTitle,videoText,true)
     button.video--btn--open(type="button")
     .video--box
         button.video--btn--close(type="button")

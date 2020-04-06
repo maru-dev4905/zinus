@@ -1,0 +1,12 @@
+include ../../common/mixin.pug
+include ../../common/variable.pug
+
+section.choice
+    +sectionTitle(choiceTitle,choiceText,true)
+    ul.choice__layout
+        +choiceList("#","../image/etc/ico_pick01.png","mattress")
+        +choiceList("#","../image/etc/ico_pick02.png","bed")
+        +choiceList("#","../image/etc/ico_pick03.png","pillow")
+        +choiceList("#","../image/etc/ico_pick04.png","office")
+        +choiceList("#","../image/etc/ico_pick05.png","pet")
+        +choiceList("#","../image/etc/ico_pick06.png","special offer")

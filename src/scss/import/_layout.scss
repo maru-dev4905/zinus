@@ -27,3 +27,6 @@
 .wonder__content__layout{
     @include display($dis:grid,$tCol:repeat(3,1fr),$gap:3%, $just:center, $ali:center);
 }
+.choice__layout{
+    @include display($dis:grid,$tCol:repeat(3,1fr),$tRow:repeat(2,1fr),$gap:50px);
+}

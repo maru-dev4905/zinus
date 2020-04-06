@@ -1,10 +1,8 @@
+include ../../common/mixin.pug
+include ../../common/variable.pug
+
 .banner(class="banner__layout no-drag")
     .banner__text
-            h2 Live in wonder
-            strong 지금껏 경험하지 못한
-                br
-                | 놀라운 세상을 상자에 담았습니다.
-                br
-                | 지금, 열어보시겠어요?
+            +sectionTitle(bannerTitle,bannerText,true)
     .banner__scroll
         button.banner__scroll__img

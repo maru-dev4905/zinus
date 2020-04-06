@@ -16,6 +16,8 @@
     }
     strong{
         @include strong;
+        width: 35%;
+        word-break: keep-all;
     }
     .delivery__detail__btn{
         width: 240px;

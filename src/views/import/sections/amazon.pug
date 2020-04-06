@@ -1,5 +1,8 @@
+include ../../common/mixin.pug
+include ../../common/variable.pug
+
 .amazon(class="amazon__layout")
-    h2 World proven quality
+    +sectionTitle(amazonTitle,"",false)
     img(src="../image/etc/img_amz.png", alt="아마존 로고")
     strong 아마존 베드룸 카테고리 부문 베스트 셀러!
         br
