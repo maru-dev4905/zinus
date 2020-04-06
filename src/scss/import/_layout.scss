@@ -30,3 +30,6 @@
 .choice__layout{
     @include display($dis:grid,$tCol:repeat(3,1fr),$tRow:repeat(2,1fr),$gap:50px);
 }
+.footer__layout{
+    @include dispaly($dis:grid,$tCol:repeat(4,1fr),$tRow:repeat(3,1fr));
+}
