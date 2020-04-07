@@ -33,3 +33,6 @@
 .footer__layout{
     @include display($dis:grid,$tCol:repeat(4,1fr),$tRow:repeat(3,1fr));
 }
+.menu__layout{
+    @include display($dis:grid,$tCol:repeat(auto-fit,1fr));
+}
