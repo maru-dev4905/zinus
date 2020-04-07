@@ -17,6 +17,11 @@
         }
     }
 }
+.banner__scroll--btn{
+    &:hover{
+        transform: translateY(10px);
+    }
+}
 .delivery__detail__btn {
     &:hover {
         background-color: $green;

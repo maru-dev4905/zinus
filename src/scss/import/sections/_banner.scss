@@ -27,11 +27,12 @@
         align-self: end;
         justify-self: center;
 
-        .banner__scroll__img{
+        .banner__scroll--btn{
             @include image($url:"../image/etc/ico_main_scroll.png",$pos:center center, $size:cover, $rep:no-repeat);
             width: 60px;
             height: 32px;
             margin-bottom: 50px;
+            transition: 0.5s;
         }
     }
 }
