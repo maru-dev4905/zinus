@@ -22,10 +22,6 @@
 
         li {
             margin-left: 15px;
-
-            &:first-child {
-                margin: 0;
-            }
         }
     }
 
@@ -34,16 +30,6 @@
 
         li {
             margin-right: 15px;
-
-            &last-child {
-                margin: 0;
-            }
-
-            &:nth-child(3)::after {
-                content: "|";
-                margin-left: 14.8px;
-                color: $green;
-            }
         }
 
         .container__introduce__cart {

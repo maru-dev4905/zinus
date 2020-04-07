@@ -1,0 +1,71 @@
+.container__product {
+    li {
+        &:first-child {
+            margin: 0;
+        }
+    }
+}
+.container__introduce {
+    li {
+        &last-child {
+            margin: 0;
+        }
+        &:nth-child(3)::after {
+            content: "|";
+            margin-left: 14.8px;
+            color: $green;
+        }
+    }
+}
+.delivery__detail__btn {
+    &:hover {
+        background-color: $green;
+        color: $white;
+    }
+}
+.testi__box {
+    button {
+        &::after {
+            @include image($url:"../image/etc/bg_btn_more.png",$size:cover, $pos:center center, $rep:no-repeat);
+            content: "";
+            display: inline-block;
+            margin-left: 10px;
+            width: 20px;
+            height: 10px;
+        }
+    }
+}
+.certi__content__list {
+    li {
+        &::before {
+            @include image($url:"../image/etc/ico_checklist.png",$size:100%,$pos:center center, $rep:no-repeat);
+            content: "";
+            display: inline-block;
+            margin-right: 5px;
+            width: 18px;
+            height: 18px;
+        }
+    }
+}
+.choice {
+    li {
+        &:hover {
+            border-radius: 50%;
+            background-color: $green;
+            p {
+                color: $white;
+            }
+            img {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+}
+.footer__certify{
+    button{
+        &:hover{
+            background-color: $lightGreen;
+            color: $green;
+        }
+    }
+}

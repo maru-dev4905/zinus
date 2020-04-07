@@ -27,14 +27,6 @@
             font-size: 16.5px;
             font-weight: bold;
             text-align: left;
-            &::after{
-                @include image($url:"../image/etc/bg_btn_more.png",$size:cover, $pos:center center, $rep:no-repeat);
-                content: "";
-                display: inline-block;
-                margin-left: 10px;
-                width: 20px;
-                height: 10px;
-            }
         }
     }
 }

@@ -1,0 +1,15 @@
+@import "./layout";
+@import "../common/mixin";
+@import "../common/base";
+@import "../common/placeholder";
+@import "../common/variable";
+
+.side{
+    @include position($pos:fixed, $r:20px, $b:30px);
+    transition: 0.3s;
+    .side--btn{
+        @include image($url:"../image/side/btn-top.png",$rep:no-repeat,$size:cover,$pos:center center);
+        width: 50px;
+        height: 50px;
+    }
+}

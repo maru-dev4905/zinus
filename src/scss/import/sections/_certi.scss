@@ -44,15 +44,6 @@
                 line-height: 1.6;
                 margin-bottom: 20px;
                 font-weight: 600;
-
-                &::before {
-                    @include image($url:"../image/etc/ico_checklist.png",$size:100%,$pos:center center, $rep:no-repeat);
-                    content: "";
-                    display: inline-block;
-                    margin-right: 5px;
-                    width: 18px;
-                    height: 18px;
-                }
             }
             button {
                 color: $white;
@@ -64,6 +55,5 @@
                 background-color: $green;
             }
         }
-
     }
 }
