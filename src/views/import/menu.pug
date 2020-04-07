@@ -2,31 +2,29 @@ include ../common/mixin
 include ../common/variable
 
 .menu
-    .menu__layout
-        button.menu__btn--close
-        .menu__product
-            ul
-                span shop
-                +linkList("#","Mattress")
-                +linkList("#","Bed Frame")
-                +linkList("#","Pillow")
-                +linkList("#","Pet")
-            ul
-                span explore
-                +linkList("#","Showroom")
-                +linkList("#","Mattress Quiz")            
-        .menu__introduce
-            ul
-                span zinus
-                +linkList("#","Story")
-                +linkList("#","Mattress in a Box")
-                +linkList("#","News Room")
-            ul
-                span materials
-                +linkList("#","조립설명서")
-            ul
-                span connect
-                +linkList("#","1:1 문의")
-                +linkList("#","FAQ")
-
+    button.menu__btn--close
+    .menu__product(class="menu__layout")
+        ul
+            span shop
+            +linkList("#","Mattress")
+            +linkList("#","Bed Frame")
+            +linkList("#","Pillow")
+            +linkList("#","Pet")
+        ul
+            span explore
+            +linkList("#","Showroom")
+            +linkList("#","Mattress Quiz")            
+    .menu__introduce(class="menu__layout")
+        ul
+            span zinus
+            +linkList("#","Story")
+            +linkList("#","Mattress in a Box")
+            +linkList("#","News Room")
+        ul
+            span materials
+            +linkList("#","조립설명서")
+        ul
+            span connect
+            +linkList("#","1:1 문의")
+            +linkList("#","FAQ")
     .menu--dim

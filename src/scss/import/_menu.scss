@@ -7,35 +7,32 @@
 .menu{
     @include position($pos:fixed, $l:0, $t:0, $z:100);
     box-sizing: border-box;
-    width: 25vw;
+    width: 50vw;
     height: 100vh;
     display: none;
     
-    .menu__layout{
-        ul{
-            margin-top: 10px;
-            span{
-                color: $yellow;
-                font-size: 16px;
-                text-transform: uppercase;
-                font-weight: 500;
-            }
-            li{
-                margin-top: 5px;
-                font-size: 18px;
-                font-weight: 500;
-            }
+    ul{
+        margin-top: 10px;
+        justify-self: center;
+        span{
+            color: $yellow;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        li{
+            margin-top: 5px;
+            font-size: 18px;
+            font-weight: 500;
         }
     }
     .menu__product, .menu__introduce{
         @include image($url:"../image/etc/bg_choice_pattern.png",$size:20px,$pos:left -100px,$rep:repeat-x);
-        @include display($dis:flex,$fdir:column,$just:center);
-        padding: 0px 50px 0 50px;
         height: 50vh;
     }
     .menu__btn--close{
         @include image($url:"../image/header/btn-acl-close.png",$size:cover,$rep:no-repeat);
-        @include position($pos:absolute,$t:20px,$l:50px);
+        @include position($pos:absolute,$t:20px,$l:20px);
         width: 25px;
         height: 25px;
     }
@@ -47,7 +44,7 @@
     }
     .menu--dim{
         @include position($pos:fixed, $r:0,$t:0,$z:1000);
-        width: 75vw;
+        width: 50vw;
         height: 100vh;
         background-color: $shadow-5;
         cursor: pointer;

@@ -15,6 +15,19 @@
             }
         }
     }
+    // menu
+    .menu{
+        width: 100vw;
+        .menu__layout ul{
+            display: flex;
+            flex-direction: column;
+        }
+        .menu--dim{
+            width: 0;
+        }
+        .menu__product, .menu__introduce{
+        }
+    }
 }
 
 @include tablet {
