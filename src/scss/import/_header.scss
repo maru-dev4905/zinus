@@ -75,7 +75,9 @@
         input {
             height: 50%;
             margin-right: 10px;
-            border:none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
             border-bottom: 1px solid $shadow-1;
         }
 
