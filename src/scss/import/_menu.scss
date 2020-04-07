@@ -9,6 +9,7 @@
     box-sizing: border-box;
     width: 25vw;
     height: 100vh;
+    display: none;
     
     .menu__layout{
         ul{
@@ -26,30 +27,29 @@
             }
         }
     }
-    .menu__btn__close{
+    .menu__product, .menu__introduce{
+        @include image($url:"../image/etc/bg_choice_pattern.png",$size:20px,$pos:left -100px,$rep:repeat-x);
+        @include display($dis:flex,$fdir:column,$just:center);
+        padding: 0px 50px 0 50px;
+        height: 50vh;
+    }
+    .menu__btn--close{
         @include image($url:"../image/header/btn-acl-close.png",$size:cover,$rep:no-repeat);
         @include position($pos:absolute,$t:20px,$l:50px);
         width: 25px;
         height: 25px;
     }
     .menu__product{
-        @include image($url:"../image/etc/bg_choice_pattern.png",$size:20px,$pos:left -100px,$rep:repeat-x);
-        @include display($dis:flex,$fdir:column,$just:center);
         background-color: $lightGreen;
-        padding: 0px 50px 0 50px;
-        height: 50vh;
     }
     .menu__introduce{
-        @include image($url:"../image/etc/bg_choice_pattern.png",$size:20px,$pos:left -100px,$rep:repeat-x);
-        @include display($dis:flex,$fdir:column,$just:center);
         background-color: $lightGreen-1;
-        padding: 0px 50px 0 50px;
-        height: 50vh;
     }
-    .menu__dim{
+    .menu--dim{
         @include position($pos:fixed, $r:0,$t:0,$z:1000);
         width: 75vw;
         height: 100vh;
         background-color: $shadow-5;
+        cursor: pointer;
     }
 }

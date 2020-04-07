@@ -68,7 +68,7 @@
     padding: 0 20px;
     background-color: $white;
 
-    .head__bugger {
+    .head--bugger {
         @include image($url:"../image/header/top_menu.png", $size:70%, $pos:0 center, $rep:no-repeat);
         width: 30px;
         height: 30px;
