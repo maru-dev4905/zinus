@@ -19,9 +19,7 @@
         }
 
         strong {
-            display: block;
             @include strong;
-            width: 450px;
         }
     }
     .banner__scroll{

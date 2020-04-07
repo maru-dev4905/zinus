@@ -25,7 +25,12 @@
         .menu--dim{
             width: 0;
         }
-        .menu__product, .menu__introduce{
+    }
+    
+    // video
+    .video{
+        .video--box{
+            width: 100vw;
         }
     }
 }
@@ -43,6 +48,12 @@
             .head__member, .head__cart{
                 display: inline-block;
             }
+        }
+    }
+    // video
+    .video{
+        .video--box{
+            width: 100vw;
         }
     }
 }
