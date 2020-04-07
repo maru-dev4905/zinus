@@ -1,12 +1,12 @@
 const container = document.querySelector(".header--container");
 
-let windowHeight = window.innerHeight; 
-
 window.addEventListener("scroll", ()=>{
+    let windowWidth = window.innerWidth;
     let scrollY = window.scrollY;
-    if(scrollY === 0){
-        container.style.display = "flex";
-    }else{
+    if(windowWidth <= 768 || scrollY >= 1){
         container.style.display = "none";
+    }else if(windowWidth >= 768 || scrollY == 0){
+        container.style.display = "flex";
     }
+    
 });

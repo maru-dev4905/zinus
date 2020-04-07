@@ -14,13 +14,14 @@
         justify-self: center;
         text-align: center;
         word-break: keep-all;
-
         h2 {
             @include h2;
         }
 
         strong {
+            display: block;
             @include strong;
+            width: 450px;
         }
     }
     .banner__scroll{
