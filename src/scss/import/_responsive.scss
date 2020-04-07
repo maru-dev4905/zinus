@@ -33,6 +33,13 @@
             width: 100vw;
         }
     }
+    // delivery
+    .delivery{
+        padding: 6%;
+        strong{
+            width: 100%;
+        }
+    }
 }
 
 @include tablet {
@@ -54,6 +61,13 @@
     .video{
         .video--box{
             width: 100vw;
+        }
+    }
+    // delivery
+    .delivery{
+        padding: 4%;
+        strong{
+            width: 100%;
         }
     }
 }
