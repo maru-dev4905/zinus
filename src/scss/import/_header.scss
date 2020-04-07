@@ -74,17 +74,26 @@
 
         input {
             height: 50%;
-            margin-right: 10px;
             border-top: none;
             border-left: none;
             border-right: none;
             border-bottom: 1px solid $shadow-1;
         }
-
-        .head__search {
-            @include image($url:"../image/header/ico_srch.png",$size:100%, $pos:center center, $rep:no-repeat);
+        button{
             width: 20px;
             height: 60px;
+            margin-right: 10px;
+        }
+        .head__search {
+            @include image($url:"../image/header/ico_srch.png",$size:100%, $pos:center center, $rep:no-repeat);
+        }
+        .head__member{
+            @include image($url:"../image/header/ico_mem.png",$size:100%,$pos:center center,$rep:no-repeat);
+            display: none;
+        }
+        .head__cart{
+            @include image($url:"../image/header/ico_cart2.png",$size:100%,$pos:center center,$rep:no-repeat);
+            display: none;
         }
     }
 }

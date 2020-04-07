@@ -1,0 +1,39 @@
+@import "../common/mixin";
+
+@include mobile {
+    // header
+    .container{
+        display: none;
+    }
+    .head{
+        input{
+            display: none;
+        }
+        form{
+            .head__member, .head__cart{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@include tablet {
+    // header
+    .container{
+        display: none;
+    }
+    .head{
+        input{
+            display: none;
+        }
+        form{
+            .head__member, .head__cart{
+                display: inline-block;
+            }
+        }
+    }
+}
+
+@include desktop {
+
+}
