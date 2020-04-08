@@ -6,8 +6,9 @@
 .wonder{
     @include image($url:"../image/etc/main_wonder.jpg",$ath:fixed,$size:cover,$pos:center center, $rep:no-repeat);
     width: 100vw;
-    height: 100vh;
+    height: auto;
     color: $white;
+    padding: 50px 0;
 
     h2{
         @include h2;
@@ -16,7 +17,6 @@
     }
     .wonder__content{
         padding: 0 50px;
-        height: 75%;
         
         img{
             @include position($pos:relative, $l:50%);
@@ -26,13 +26,11 @@
         strong{
             font-size: 20px;
             font-weight: 300;
-            width: 50%;
             color: $yellow;
         }
         p{
             font-size: 15px;
             font-weight: 300;
-            width: 50%;
             margin-top: 30px;
         }
         .wonder__box__text{

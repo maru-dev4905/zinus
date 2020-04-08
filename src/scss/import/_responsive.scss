@@ -42,50 +42,56 @@
         }
     }
     // amazon
-    .amazon__layout{
+    .amazon__layout {
         @include display($dis:flex, $just:center, $ali:center, $fdir:column);
         text-align: center;
-        img{
+        img {
             margin: 25px 0;
         }
-        h2{
+        h2 {
             align-self: center;
             font-size: 3rem;
         }
     }
     // testi
-    .testi{
+    .testi {
         @include display($dis:flex, $just:center, $ali:center, $fdir:column);
-        .testi__box{
+        .testi__box {
             margin-top: 50px;
-            h3{
+            h3 {
                 font-size: 18px;
             }
         }
-        :first-child{
+        :first-child {
             margin-top: 0;
         }
     }
     // certi
-    .certi__layout{
+    .certi__layout {
         @include display($dis:flex, $just:center, $ali:center, $fdir:column);
     }
-    .certi{
-        .certi__content{
+    .certi {
+        .certi__content {
             padding: 50px 0;
-            .certi__content__text{
+            .certi__content__text {
                 margin: 0;
-                h2{
+                h2 {
                     font-size: 3rem;
                 }
             }
-            img{
+            img {
                 margin: 30px 0;
             }
         }
-        .certi__content__list{
+        .certi__content__list {
             margin: 20px 30px;
         }
+    }
+    .wonder__content__layout{
+        @include display($dis:flex,$just:center,$ali:center, $fdir:column);
+    }
+    .wonder__box{
+        margin: 30px 0;
     }
 }
 
@@ -119,24 +125,23 @@
         }
     }
     // amazon
-    .amazon__layout{
+    .amazon__layout {
         @include display($dis:flex, $just:center, $ali:center, $fdir:column);
         text-align: center;
-        img{
+        img {
             margin: 25px 0;
         }
-        h2{
+        h2 {
             align-self: center;
         }
     }
-    .testi{
-        .testi__box{
-            h3{
+    .testi {
+        .testi__box {
+            h3 {
                 font-size: 18px;
             }
         }
     }
 }
 
-@include desktop {
-    }
+@include desktop {}
