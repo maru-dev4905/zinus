@@ -53,6 +53,18 @@
             font-size: 3rem;
         }
     }
+    .testi{
+        @include display($dis:flex, $just:center, $ali:center, $fdir:column);
+        .testi__box{
+            margin-top: 50px;
+            h3{
+                font-size: 18px;
+            }
+        }
+        :first-child{
+            margin-top: 0;
+        }
+    }
 }
 
 @include tablet {
@@ -93,6 +105,13 @@
         }
         h2{
             align-self: center;
+        }
+    }
+    .testi{
+        .testi__box{
+            h3{
+                font-size: 18px;
+            }
         }
     }
 }

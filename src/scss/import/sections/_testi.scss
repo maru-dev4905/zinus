@@ -5,15 +5,18 @@
 
 .testi{
     @include image($url:"../image/etc/bg_dots.png");
-    height: 400px;
+    height: auto;
+    padding: 100px 0;
     color: $green;
     background-color: $lightGreen;
 
     .testi__box{
         @include display($dis:flex, $fdir:column);
+        margin: 0 15%;
 
         h3,p{
             margin-bottom: 20px;
+            word-break: keep-all;
         }
         h3{
             font-size: 24px;
