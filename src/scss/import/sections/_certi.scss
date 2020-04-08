@@ -7,11 +7,12 @@
     @include display($dis:flex, $just:center, $ali:center);
     @include image($url:"../image/etc/bg_stripe.png");
     color: $green;
-    height: 130vh;
+    height: auto;
+    padding: 50px 0;
 
     .certi__content {
-        width: 1180px;
-        height: auto;
+        width: 95vw;
+        height: 90%;
         background-color: #fff;
 
         .certi__content__text {
@@ -25,12 +26,15 @@
                 @include strong;
             }
             p {
-                margin-top: 25px;
+                margin: 0 auto;
+                width: 80%;
                 font-size: 18px;
                 font-weight: lighter;
+                word-break: keep-all;
             }
             span {
                 font-weight: 500;
+                word-break: keep-all;
             }
         }
         img {
@@ -44,6 +48,7 @@
                 line-height: 1.6;
                 margin-bottom: 20px;
                 font-weight: 600;
+                word-break: keep-all;
             }
             button {
                 color: $white;
