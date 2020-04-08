@@ -4,23 +4,23 @@
 @import "../common/placeholder";
 @import "../common/variable";
 
-.footer{
-    height: 50vh;
+.footer {
+    height: auto;
     background-color: $green;
     color: $white;
-    padding: 0 14%;
+    padding: 50px 30px;
 
-    .footer__nav{
+    .footer__nav {
         grid-column: 1/4;
         grid-row: 1/2;
         align-self: center;
 
-        ul{
+        ul {
             @include display($dis:flex,$ali:center);
             height: 50px;
-            li{
+            li {
                 margin-right: 45px;
-                a{
+                a {
                     @include display($dis:flex,$just:center,$ali:center);
                     color: $white;
                     height: 100%;
@@ -29,33 +29,33 @@
             }
         }
     }
-    .footer__policy{
+    .footer__policy {
         grid-column: 1/4;
         grid-row: 2/3;
         font-size: 12px;
         line-height: 1.7;
     }
-    .footer__one{
+    .footer__one {
         @include display($dis:flex,$fdir:column);
         grid-column: 4/5;
         grid-row: 1/4;
         line-height: 1.6;
         margin: 50px 0 0 90px;
-        
-        span{
+
+        span {
             font-size: 14px;
         }
-        strong{
+        strong {
             font-size: 20px;
         }
-        p{
-            font-size: 14px;   
+        p {
+            font-size: 14px;
         }
     }
-    .footer__certify{
+    .footer__certify {
         grid-column: 1/4;
         grid-row: 3/4;
-        button{
+        button {
             color: $white;
             border: 1px solid $white;
             height: 40px;
