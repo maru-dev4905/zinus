@@ -2,76 +2,100 @@
 
 @include mobile {
     // header
-    .container{
+    .container {
         display: none;
     }
-    .head{
-        input{
+    .head {
+        input {
             display: none;
         }
-        form{
-            .head__member, .head__cart{
+        form {
+            .head__cart,
+            .head__member {
                 display: inline-block;
             }
         }
     }
     // menu
-    .menu{
+    .menu {
         width: 100vw;
-        .menu__layout ul{
+        .menu__layout ul {
             display: flex;
             flex-direction: column;
         }
-        .menu--dim{
+        .menu--dim {
             width: 0;
         }
     }
-    
+
     // video
-    .video{
-        .video--box{
+    .video {
+        .video--box {
             width: 100vw;
         }
     }
     // delivery
-    .delivery{
+    .delivery {
         padding: 6%;
-        strong{
+        strong {
             width: 100%;
+        }
+    }
+    // amazon
+    .amazon__layout{
+        @include display($dis:flex, $just:center, $ali:center, $fdir:column);
+        text-align: center;
+        img{
+            margin: 25px 0;
+        }
+        h2{
+            align-self: center;
+            font-size: 3rem;
         }
     }
 }
 
 @include tablet {
     // header
-    .container{
+    .container {
         display: none;
     }
-    .head{
-        input{
+    .head {
+        input {
             display: none;
         }
-        form{
-            .head__member, .head__cart{
+        form {
+            .head__cart,
+            .head__member {
                 display: inline-block;
             }
         }
     }
     // video
-    .video{
-        .video--box{
+    .video {
+        .video--box {
             width: 100vw;
         }
     }
     // delivery
-    .delivery{
+    .delivery {
         padding: 4%;
-        strong{
+        strong {
             width: 100%;
+        }
+    }
+    // amazon
+    .amazon__layout{
+        @include display($dis:flex, $just:center, $ali:center, $fdir:column);
+        text-align: center;
+        img{
+            margin: 25px 0;
+        }
+        h2{
+            align-self: center;
         }
     }
 }
 
 @include desktop {
-    
-}
+    }

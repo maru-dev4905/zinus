@@ -4,12 +4,14 @@
 @import "../../common/variable";
 
 .amazon{
-    height: 400px;
+    height: auto;
     background-color: $green;
     color:$white;
+    padding: 50px;
 
     h2{
         @include h2;
+        display: block;
         grid-column: 1/3;
         justify-self: center;
         align-self: end;
