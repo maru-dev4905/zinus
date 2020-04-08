@@ -9,7 +9,8 @@
     background-color: $lightGreen;
     color: $green;
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    padding: 50px 0;
     h2 {
         @include h2;
     }
@@ -38,5 +39,8 @@
         position: absolute;
         width: 200px;
         height: 200px;
+    }
+    img{
+        width: 100%;
     }
 }

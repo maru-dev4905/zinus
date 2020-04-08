@@ -87,11 +87,32 @@
             margin: 20px 30px;
         }
     }
-    .wonder__content__layout{
+    .wonder__content__layout {
         @include display($dis:flex,$just:center,$ali:center, $fdir:column);
     }
-    .wonder__box{
+    .wonder__box {
         margin: 30px 0;
+    }
+
+    // choice
+    .choice {
+        h2 {
+            font-size: 3rem;
+        }
+        strong {
+            text-align: center;
+        }
+        a,
+        li {
+            width: 170px;
+            height: 170px;
+        }
+        p {
+            font-size: 13px;
+        }
+    }
+    .choice__layout {
+        @include display($tCol:repeat(2,1fr),$tRow:repeat(3,1fr));
     }
 }
 
@@ -135,11 +156,23 @@
             align-self: center;
         }
     }
+    // testi
     .testi {
         .testi__box {
             h3 {
                 font-size: 18px;
             }
+        }
+    }
+    // choice
+    .choice {
+        a,
+        li {
+            width: 170px;
+            height: 170px;
+        }
+        p {
+            font-size: 13px;
         }
     }
 }
