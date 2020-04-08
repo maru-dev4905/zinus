@@ -13,7 +13,7 @@
     @include display($dis:grid,$tRow:55% 45%);
 }
 .amazon__layout{
-    @include display($dis:grid,$tCol:40% 40%, $tRow:40% 40%, $just:center, $aliC:center, $gap:20px);
+    @include display($dis:grid,$tCol:50% 50%, $tRow:40% 40%, $just:center, $aliC:center, $gap:15px);
 }
 .testi__layout{
     @include display($dis:grid,$tCol:repeat(auto-fit,380px),$just:center, $atFlow:column, $ali:center, $gap:30px);

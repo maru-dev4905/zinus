@@ -16,8 +16,11 @@
     }
     strong{
         @include strong;
+        font-size: 18px;
+        
     }
     img{
-        justify-self: center;
+        justify-self: flex-end;
+        margin-right: 100px;
     }
 }
