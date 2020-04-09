@@ -37,15 +37,6 @@
                 @include position($pos:relative, $t:50%);
                 transform: translateY(-50%);
             }
-            em {
-                @include position($pos:absolute, $t:2px, $r:20px);
-                @include display($dis:flex, $just:center, $ali:center);
-                background-color: $black;
-                color: $white;
-                width: 20px;
-                height: 20px;
-                border-radius: 50%;
-            }
         }
     }
 }
