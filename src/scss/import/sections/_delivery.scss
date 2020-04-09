@@ -17,7 +17,6 @@
     strong {
         @include strong;
         width: 35%;
-        word-break: keep-all;
     }
     .delivery__detail__btn {
         width: 240px;
@@ -27,10 +26,5 @@
         background-color: $lightGreen;
         color: $green;
         transition: 0.3s;
-        
-        &:hover {
-            background-color: $green;
-            color: $white;    
-        }
     }
 }

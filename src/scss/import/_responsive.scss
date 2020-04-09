@@ -1,7 +1,8 @@
 @import "../common/mixin";
+@import "../common/variable";
 
 @include mobile {
-    *{
+    * {
         font-size: 13px;
     }
     // header
@@ -30,10 +31,8 @@
         }
     }
     // video
-    .video {
-        .video--box {
-            width: 100vw;
-        }
+    .video .video--box {
+        width: 100vw;
     }
     // delivery
     .delivery {
@@ -125,10 +124,18 @@
             grid-column: 1/5;
             ul {
                 li {
-                    font-size: 12px;
-                    margin-right: 20px;
+                    font-size: 1px;
+                    margin-right: 5px;
+                    a {
+                        font-size: 10px;
+                    }
                     &:first-child {
                         display: none;
+                    }
+                    ::after {
+                        content: "|";
+                        color: $white;
+                        margin-left: 5px;
                     }
                 }
             }
@@ -166,10 +173,8 @@
         }
     }
     // video
-    .video {
-        .video--box {
-            width: 100vw;
-        }
+    .video .video--box {
+        width: 100vw;
     }
     // delivery
     .delivery {
@@ -190,23 +195,19 @@
         }
     }
     // testi
-    .testi {
-        .testi__box {
-            h3 {
-                font-size: 18px;
-            }
+    .testi .testi__box {
+        h3 {
+            font-size: 18px;
         }
     }
     // choice
-    .choice {
-        a,
-        li {
-            width: 170px;
-            height: 170px;
-        }
-        p {
-            font-size: 13px;
-        }
+    .choice a,
+    li {
+        width: 170px;
+        height: 170px;
+    }
+    p {
+        font-size: 13px;
     }
     // footer
     .footer__layout {

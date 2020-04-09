@@ -13,7 +13,7 @@
     .certi__content {
         width: 95vw;
         height: 90%;
-        background-color: #fff;
+        background-color: $white;
         padding-bottom: 50px;
 
         .certi__content__text {
@@ -32,11 +32,9 @@
                 width: 100%;
                 font-size: 18px;
                 font-weight: lighter;
-                word-break: keep-all;
             }
             span {
                 font-weight: 500;
-                word-break: keep-all;
             }
         }
         img {
@@ -51,7 +49,6 @@
                 line-height: 1.6;
                 margin-bottom: 20px;
                 font-weight: 600;
-                word-break: keep-all;
             }
             button {
                 color: $white;
