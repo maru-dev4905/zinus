@@ -5,7 +5,6 @@
 
 .banner {
     @include image($url:"../image/etc/main_top.jpg",$size:cover, $pos:center center, $rep:no-repeat);
-
     height: 100vh;
     color: $green;
 

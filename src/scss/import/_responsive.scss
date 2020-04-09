@@ -1,6 +1,9 @@
 @import "../common/mixin";
 
 @include mobile {
+    *{
+        font-size: 13px;
+    }
     // header
     .container {
         display: none;
@@ -20,14 +23,12 @@
     .menu {
         width: 100vw;
         .menu__layout ul {
-            display: flex;
-            flex-direction: column;
+            @include display($dis:flex, $fdir:column);
         }
         .menu--dim {
             width: 0;
         }
     }
-
     // video
     .video {
         .video--box {
