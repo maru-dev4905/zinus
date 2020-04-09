@@ -4,7 +4,7 @@
     }
 }
 .container__introduce li {
-    &last-child {
+    &:last-child {
         margin: 0;
     }
     &:nth-child(3)::after {
